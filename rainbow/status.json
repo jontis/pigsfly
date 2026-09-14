@@ -1,0 +1,11 @@
+{
+  "asof": "2026-09-14",
+  "spot_usd": 72988.04347826086,
+  "center_usd": 121848.96784441322,
+  "band": "Accumulate",
+  "band_lo_usd": 68831.76320980677,
+  "band_hi_usd": 86497.20588498733,
+  "p_over_t": 0.5990041997849174,
+  "estimated_peak": "2029-08-05",
+  "estimated_peak_lag_days": 479
+}
