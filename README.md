@@ -2,6 +2,8 @@
 
 Static site for [pigsfly.ai](https://pigsfly.ai/), meant for **GitHub Pages**.
 
+Agent rules: [`AGENTS.md`](AGENTS.md). Rainbowmoon content: `../rainbowmoon/AGENTS.md`.
+
 ## Local
 
 ```bash
@@ -18,20 +20,19 @@ Open http://localhost:8080/
 
 ## Refresh the rainbow chart
 
-In the Rainbowmoon repo:
+From the Rainbowmoon repo (writes `site/` there and `rainbow/article.html` here, then assembles chrome):
 
 ```bash
 uv run rainbowmoon publish --out site
 ```
 
-Then copy into this repo:
+Or only wrap existing `rainbow/article.html`:
 
 ```bash
-cp /path/to/rainbowmoon/site/index.html rainbow/index.html
-cp /path/to/rainbowmoon/site/status.json rainbow/status.json
+python3 scripts/assemble-rainbow.py
 ```
 
-Commit and push. There is no live price feed on Pages.
+Commit and push this repo. There is no live price feed on Pages.
 
 ## GitHub Pages
 
