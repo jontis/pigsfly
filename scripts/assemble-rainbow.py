@@ -91,7 +91,7 @@ def assemble() -> Path:
     </main>
 
     <footer class="site-footer">
-      <p>Copyright © 2021 pigsfly.ai - All Rights Reserved.</p>
+      <p>Copyright © 2026 pigsfly.ai - All Rights Reserved.</p>
     </footer>
     </div>
 
