@@ -14,11 +14,11 @@ Repo: `jontis/pigsfly` (`main`, Pages from root). Domain DNS stays at GoDaddy; d
 | `/rainbow/` | `rainbow/index.html` (assembled) | chrome here; article from rainbowmoon |
 | 404 | `404.html` | this repo |
 
-Nav on every chrome page: **Home · Rainbow · Contact Us**. Keep those three in sync. Contact is https://x.com/DrJonAI — no mail form.
+Nav on every chrome page: **Home · Rainbow · Contact Us** in the left sidebar. Keep those three in sync. Contact is https://x.com/DrJonAI — no mail form.
 
 ## Design
 
-Tokens and chrome live in `assets/css/styles.css` and the HTML headers (Cabin + Lato, green `#67b858`, black ground, solid header on inner pages). Change look-and-feel here, not in rainbowmoon.
+Tokens and chrome live in `assets/css/styles.css` and the HTML sidebars (Cabin + Lato, green `#67b858`, black ground, left nav). Change look-and-feel here, not in rainbowmoon.
 
 Rainbow **content** arrives as `rainbow/article.html` (an `<article class="rainbow-article">`, plus Plotly). Wrap it with site chrome by running:
 

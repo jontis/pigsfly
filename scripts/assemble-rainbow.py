@@ -48,26 +48,24 @@ def assemble() -> Path:
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
   <body>
-    <header class="site-header site-header--solid">
-      <div class="header-inner">
-        <a class="logo" href="../index.html">pigsfly.ai</a>
-        <nav class="nav" aria-label="Primary">
-          <a class="nav-link" href="../index.html">Home</a>
-          <a class="nav-link is-active" href="./">Rainbow</a>
-          <a class="nav-link" href="../contact-us/">Contact Us</a>
-        </nav>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Open menu"
-          aria-expanded="false"
-          data-drawer-open
-        >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
-          </svg>
-        </button>
-      </div>
+    <header class="site-sidebar">
+      <a class="logo" href="../index.html">pigsfly.ai</a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link is-active" href="./">Rainbow</a>
+        <a class="nav-link" href="../contact-us/">Contact Us</a>
+      </nav>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        data-drawer-open
+      >
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z" />
+        </svg>
+      </button>
     </header>
 
     <div class="mobile-drawer" data-drawer aria-hidden="true">
@@ -78,6 +76,7 @@ def assemble() -> Path:
             <path d="M18 6.4 17 5.4 12 10.4 7 5.4 6 6.4 11 11.4 6 16.4 7 17.4 12 12.4 17 17.4 18 16.4 13 11.4z" />
           </svg>
         </button>
+        <a class="logo" href="../index.html">pigsfly.ai</a>
         <nav class="drawer-nav">
           <a href="../index.html">Home</a>
           <a href="./">Rainbow</a>
@@ -86,6 +85,7 @@ def assemble() -> Path:
       </div>
     </div>
 
+    <div class="site-frame">
     <main class="rainbow-page">
       {article}
     </main>
@@ -93,18 +93,7 @@ def assemble() -> Path:
     <footer class="site-footer">
       <p>Copyright © 2021 pigsfly.ai - All Rights Reserved.</p>
     </footer>
-
-    <aside class="cookie" data-cookie hidden>
-      <h2>This website uses cookies.</h2>
-      <p>
-        We use cookies to analyze website traffic and optimize your website experience. By
-        accepting our use of cookies, your data will be aggregated with all other user data.
-      </p>
-      <div class="cookie-actions">
-        <button type="button" data-cookie-choice="decline">Decline</button>
-        <button type="button" class="cookie-accept" data-cookie-choice="accept">Accept</button>
-      </div>
-    </aside>
+    </div>
 
     <script src="../assets/js/main.js"></script>
   </body>

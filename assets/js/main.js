@@ -16,16 +16,4 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") setDrawer(false);
   });
-
-  const banner = document.querySelector("[data-cookie]");
-  const key = "pigsfly-cookie-choice";
-  if (banner && !localStorage.getItem(key)) {
-    banner.hidden = false;
-  }
-  banner?.querySelectorAll("[data-cookie-choice]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      localStorage.setItem(key, btn.getAttribute("data-cookie-choice"));
-      banner.hidden = true;
-    });
-  });
 })();
