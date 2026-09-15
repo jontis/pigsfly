@@ -141,13 +141,13 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 108px 0 100px;
+  padding: 128px 0 120px;
   background: var(--bg);
 }
 
 .hero img {
-  width: 64%;
-  max-width: 920px;
+  width: 70%;
+  max-width: 1020px;
   height: auto;
   transform: translateX(-52px);
 }
